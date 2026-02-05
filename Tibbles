@@ -1,0 +1,14 @@
+#load the tidyverse package
+library(tidyverse)
+
+#load the diamonds dataset
+data("diamonds")
+
+#Open the dataset
+View(diamonds)
+
+#create the tibble for the diamonds dataset
+as_tibble(diamonds)
+
+#create an object to save the diamonds dataset as a tibble
+diamonds_tibbled <- as_tibble(diamonds)
