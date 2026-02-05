@@ -1,0 +1,17 @@
+#Creates a vector of five different fruits
+fruit <- c("apple", "pineapple", "watermelon", 'passionfruit', "mango", "strawberry", "grape")
+
+#Ranks each fruit
+ranks <- c(7,4,5,2,1,6,3)
+
+#Combines each vector into a data frame
+fruit_ranks <- data.frame(fruit,ranks)
+
+#load dplyr package
+library(dplyr)
+
+#Arranges the fruit ranks in ASC order
+fruit_sorted <- fruit_ranks %>% arrange(ranks)
+
+#Opens data frame
+View(fruit_sorted)
